@@ -1,0 +1,825 @@
+
+/* Stabilization
+-------------------------------------------------- */
+
+@font-face {
+  font-family: 'intro';
+  src: url('intro.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'frabk';
+  src: url('frabk.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fradm';
+  src: url('fradm.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+::selection {
+    color: #ff0000;
+    text-shadow: none;
+    background-color: #ffffff;
+}
+html, body {
+    height: 100%;
+     
+}
+input, select, textarea {
+    color: #222;
+    line-height: 2;
+    font-family: 'frabk', Cambria, Georgia, serif;
+    word-spacing: .1em;
+    text-indent: 0px;
+}
+
+html, form, .button {
+    /* Remove user-select for easer debugging */
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch; /* iOS 7 legacy http://barrow.io/overflow-scrolling */
+    background-color: #ffffff;
+   /* Old Webkit smooth text rendering issue */
+    -webkit-font-smoothing: antialiased;
+            font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    cursor: default;
+}
+
+
+main, input, textarea {
+    -webkit-user-select: text;
+       -moz-user-select: text;
+        -ms-user-select: text;
+            user-select: text;
+}
+main {
+    display: block; /* IE10, Opera 12.16 and old WebKit legacy */
+padding-top: 0;
+  
+}
+h1, h2, h3 {
+    font-weight: normal;
+    font-family: 'intro', serif; /* IE fallback 'Times New Roman' */
+
+}
+
+.Industria{
+    color:#3e6489;
+}
+
+.FondoIndustria{
+    background-color:#3e6489;
+}
+
+.Gobierno{
+    color:#7bb398;}
+
+.FondoGobierno{
+    background-color:#7bb398;
+}
+.Ciudadania{
+    color:#76b1d9;
+}
+.FondoCiudadania{
+   background-color:#76b1d9;
+   color:#ffffff;
+}
+.FondoCiudadania:hover{
+    background-color: #5ba3d2;
+}
+
+.FondoGobierno:hover{
+    background-color: #5ca081;
+}
+.FondoIndustria:hover{
+    background-color: #32506d;
+}
+
+.FondoRojo{
+    background-color: #b9423e;
+}
+
+.FondoRojo:hover{
+    background-color: #993533;
+}
+.botoninicio{width:140px; font-size:28px;font-weight: bold; }
+
+.boxes{width:100%;padding: 0 0 0 0;}
+.box{vertical-align: top;display:inline-block;border: solid 0px #ff0000;text-align: center;padding-bottom: 10px;width:26.5%;margin-left: 3%;margin-right: 3%;}
+
+.boton{line-height:32px;
+       color:#ffffff;
+       border-radius:4px;
+       border:solid 0px #000000;
+       font-size: 15px;
+       font-family: 'frabk';
+       text-decoration: none;
+       display: inline-block;
+}
+.icono{font-size: 40px;text-align: center;color: #1e618b}
+
+.circle{border-radius:30px;width: 60px;height: 60px;color:#ffffff;font-size: 30px;background-color: #494b4a;text-align: center; display: inline-block;margin-left:10px;margin-right:10px;margin-top: 30px;margin-bottom: 30px;     line-height: 2.1;}
+.footerCenter{display: inline-block;width: 100%}
+.footerRight{display: inline-block;width: 49%;text-align: center; border: solid 0px #ff0000;vertical-align: top;} 
+.footerRight table{border-spacing:0;border-collapse:collapse;}
+.footerRight td{padding-top: 0;padding-bottom: 0;}
+article{width:300px;text-align: justify;border: solid 0px #ffff00; margin-left: auto;margin-right: auto; margin-bottom:60px; }
+.footerLeft{ display: inline-block;width: 50%;text-align: center;border: solid 0px #0000FF;vertical-align: top;}
+
+.centrado{display: flex;width: 100%;min-height: 640px;border:solid 0px #ffff00;;align-content: center;vertical-align: center;text-align: center;align-items: center;position: relative;}
+.centrado2{display: flex;width: 100%;min-height: 340px;border:solid 0px #ffff00;vertical-align:top;text-align: center;position: relative;}
+.colLeft{display: flex;width: 50%;text-align: center;border: solid 0px #0000FF;vertical-align: top;align-items: center;height:100%;}
+.colRight{display:flex;width: 50%;text-align: center;border: solid 0px #ff0000;vertical-align: top;height:100%;align-items: center;align-content: center; }
+#contact{font-family: 'frabk';text-align: center;margin-left: auto;margin-right: auto}
+
+.circulo{
+    background-image: url(../img/water-protection-monitoreo-del-agua-backcirculo.jpg);
+    color:#ffffff;
+    width: 200px;
+    height:230px;
+    border-radius: 168px;
+    padding-top:35px;
+    padding-bottom: 65px;
+    padding-left: 65px;
+    padding-right: 65px;
+    border: solid 0px #0000FF; 
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;
+margin-bottom: 100px;
+
+}
+
+
+.animacion{position:absolute;top:0;left:50%;margin-left:-451.5px;border:solid 0px #FF0000}
+.animacion2{position:absolute;top:0;left:50%;margin-left:-333.5px;border:solid 0px #FF0000}
+.animacion3{position:absolute;top:0;left:50%;margin-left:-585.5px;border:solid 0px #FF0000}
+
+option:first {
+    color: #999;
+}
+.imgsobre{ opacity: 1;
+    filter: alpha(opacity=100);}
+.imgsobre:hover{ opacity: 0.8;
+    filter: alpha(opacity=80);}
+
+.FooterIcono{font-size:30px;color:#70706e;line-height: 35px;padding-right: 15px }
+.iconsmall{font-size: 20px;}
+.footerContact{
+   font-family: 'frabk';
+   text-align: left;
+   font-size: 15px;
+   line-height: 20px;
+}
+
+.formContact{ 
+    border-spacing:0; 
+    border-collapse:collapse;
+    width: 330px;margin-bottom: 20px;}
+.formContizacion{border-spacing:0; 
+    border-collapse:collapse;
+    width: 420px;}
+.fornlabel{width:50%;display: block;}
+.formContact td{padding-right: 5px;padding-bottom: 5px;}
+.formContizacion td{padding-right: 15px;padding-bottom: 10px;text-align: left;font-family: 'frabk';font-size: 14px;color: #8f8f8f}
+
+
+.login{border-radius:3px;
+color:#7e7b7b;
+padding: 5px 10px 5px 10px;
+display: inline-block;
+border: solid 1px #000000;
+font-size: 14px;
+float:right;
+margin-top: 20px;
+margin-right: 5%;}
+
+.logo{float:left;margin-top: 15px;margin-left: 8%}
+
+
+.white{color: white;}
+
+h5 {
+
+    font-family: 'intro';
+    font-size: 13px;
+font-weight: normal;
+text-transform: uppercase;
+margin-bottom: 3px;
+margin-top: 0}
+
+.izquierda{text-align: left;}
+
+h1 {
+    font-size: 3em;
+    color: #3c638c;
+    font-family: 'intro';
+    text-align: center;
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
+}
+h1 small {
+    font-size: 60%;
+}
+h2 {
+    color: #777;
+    font-size: 2.1em;
+    font-family: 'fradm';      
+    margin-bottom: 0;
+}
+
+h3 {
+    color: #aaa;
+    font-size: 1.4em;
+}
+h4 {
+    color: #fff;
+    font-size: 1em;
+    font-family: 'frabk';
+    text-align: left;
+}
+h6 {
+    font-size: 18px;
+    font-family: 'frabk';
+    text-align: left;
+    margin-bottom: 15px;
+    
+}
+
+.ancho{width: 100%}
+
+
+h1 + h2,
+h2 + h3 {
+    margin-top: -.2em;
+}
+br {
+    word-spacing: 0;
+}
+p {
+color: #949695;
+        font-size: 14px;
+        font-family: 'frabk';
+        line-height: 20px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+ul, ol {
+    padding: 0;
+    list-style: none inside;
+}
+a img, abbr, iframe {
+    border: 0;
+}
+a, input, select, textarea {
+    outline: none;
+    pointer-events: auto;
+}
+a, img {
+    -webkit-user-drag: none;
+            user-drag: none;
+}
+.img{
+    width: auto;
+    max-width: 100%;
+    height: auto;}
+img {
+    /* Image scaling http://www.456bereastreet.com/lab/scaling-images-proportionally/ */
+    /**/
+    vertical-align: top;
+    -ms-interpolation-mode: bicubic;
+}
+hr {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    clear: both;
+    border-width: 0;
+    border-top: 1px solid #eee;
+}
+
+select{height:30px;}
+input[type=text], select, textarea {
+
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 5px;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+}
+input:not([type]), [type^=date], [type=email], [type=month],
+[type=number], [type=password], [type=tel], [type=text], [type=time],
+[type=url], [type=week], select, textarea {
+  
+  text-indent: 20px;
+}
+
+
+input:hover, input:focus,
+select:hover, select:focus,
+textarea:hover, textarea:focus {
+  
+   
+}
+:-ms-input-placeholder {
+    color: #000;
+}
+
+textarea {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; /* iOS 7 legacy */
+    height: auto;
+    min-height: 7.5em;
+    line-height: inherit;
+    vertical-align: top;
+    word-wrap: break-word;
+    resize: vertical;
+}
+
+
+/* Design
+-------------------------------------------------- */
+body, .tab {
+    margin: 0 0;
+}
+.progress {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    width: 0%; /* IE transition issue */
+    height: 3px;
+    background-color: #29d;
+}
+.status.start .progress {
+    width: 70%;
+    -webkit-transition-duration: 5s; /* Safari and Android legacy */
+            transition-duration: 5s;
+}
+.status.done .progress {
+    width: 100%;
+    background-color: rgba(34,153,221,0);
+    -webkit-transition-duration: .2s; /* Safari and Android legacy */
+            transition-duration: .2s;
+}
+.tab {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    left: 0;
+    line-height: 1.2;
+    font-family: 'Open Sans', Meiryo, 'Segoe UI', sans-serif;
+    text-align: center;
+    white-space: nowrap;
+}
+.tab a {
+    color: inherit;
+    text-decoration: none;
+}
+.item {
+    display: none;
+}
+  .footer {
+    max-width:1280px;
+    min-width: 26em;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+}
+.header {
+    display: inline-block;
+    position: fixed;
+    left:0;
+    padding: 0 .4em;
+    margin: auto;
+    width: 100%;
+    height:72px;
+    border-bottom:solid 3px #006a9f;
+    text-align: left;
+    background-color: rgba(255,255,255,0.9);
+    z-index: 9999999;
+   
+}
+.header:after {
+    content: '';
+    position: absolute;
+    left: .4em;
+    right: .4em;
+    height: 1.5em;
+    pointer-events: none;
+}
+.nav{
+    line-height: 2.1;
+}
+.nav {
+    display: inline-block;
+    display: -webkit-box; /* Android 2.3 legacy */
+    display: flex;
+    margin: .2em auto;
+    background-color: #f1f1f1;
+    background-image: -webkit-linear-gradient(#f8f8f8, rgba(248,248,248,0)); /* Safari and Android legacy */
+    background-image:         linear-gradient(#f8f8f8, rgba(248,248,248,0));
+    border: 1px solid #ddd;
+    border-bottom-color: #ccc;
+    border-radius: .2em;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1),
+                inset 0 0 0 1px rgba(255,255,255,.5);
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+}
+.nav a {
+    overflow: hidden;
+    display: block;
+    position: relative; /* Old Webkit visibility issue */
+    -webkit-box-flex: 1; /* Android 2.3 legacy */
+    -ms-flex: 1;
+        flex: 1;
+    min-width: 0; /* Implied Minimum Size of Flex Items http://dev.w3.org/csswg/css3-flexbox/#min-size-auto */
+    max-height: 2.2em; /* Old Webkit legacy */
+    padding: 0 .4em; /* Firefox flexbox padding percentage issue https://bugzilla.mozilla.org/show_bug.cgi?id=529761 */
+    text-overflow: ellipsis;
+    border: 0 solid #ddd;
+    border-left-width: 1px;
+}
+.nav a:first-child {
+    border-left: none;
+    border-radius: .2em 0 0 .2em;
+}
+.nav a:last-child {
+    border-radius: 0 .2em .2em 0;
+}
+.nav a:hover, .nav a:focus,
+.item:hover, .item:focus {
+    color: #000;
+    background-color: #fcfcfc;
+}
+.nav a.selected {
+    background-color: #ebebeb;
+}
+.nav a.active {
+    position: relative;
+    z-index: 1;
+    margin: -1px auto;
+    color: #fff;
+    line-height: 2.2;
+    background-color: #0c63bc;
+    border-color: transparent;
+}
+.nav .active + a {
+    border-color: transparent;
+}
+
+.main, .footer {
+    position: relative;
+    padding: 0 0%;
+    overflow-x: hidden;
+    margin: auto;
+}
+
+.medio{max-width: 1260px;
+border: solid 0px #0000FF;
+margin-left: auto;
+width: 80%;
+margin-right: auto;
+overflow-x:no-display;
+}
+
+.BannerIndustria{    
+    /*background-image: url(../img/main-industria.jpg);*/
+    background:#fff url("../img/water-protection-monitoreo-del-agua-main-industria.jpg") 100%/cover;
+}
+.BannerHome{    
+    /*background-image: url(../img/main-industria.jpg);*/
+    background:#fff url("../img/water-protection-monitoreo-del-agua-home.jpg") 100%/cover;
+}
+.BannerGobierno{    
+    /*background-image: url(../img/main-industria.jpg);*/
+    background:#fff url("../img/water-protection-monitoreo-del-agua-main-gobierno.jpg") 100%/cover;
+}
+
+.BannerCiudadania{    
+    /*background-image: url(../img/main-industria.jpg);*/
+    background:#fff url("../img/water-protection-monitoreo-del-agua-main-ciudadania.jpg") 100%/cover;
+}
+
+
+.main {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; /* iOS 7 legacy */
+    min-height: 100%;
+    padding-top: 0;
+  /*  padding-bottom: 600px;*/
+    background-color: #fff;
+    border: 0 solid #d9e0e2;
+    /*
+    border-width: 0 1px;
+    box-shadow: 2px 0 8px #ddd;
+    */
+}
+
+.footer {
+    overflow: hidden;
+    /*height: 600px; 
+    margin-top: -600px;
+    line-height: 2.1;*/
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-top: 1px solid #eee;
+
+}
+
+
+/* Handlers
+-------------------------------------------------- */
+[hidden], template { /* Unsupported attribute http://dev.w3.org/html5/spec/single-page.html#the-hidden-attribute */
+    display: none;
+}
+.visible {
+    visibility: visible;
+}
+.hidden {
+    visibility: hidden;
+    pointer-events: none;
+}
+.touchstart {
+    opacity: .55;
+}
+.disabled, .disabled a {
+    pointer-events: none;
+}
+.disabled {
+    opacity: .3;
+}
+
+
+/* Cross-browser compatibility
+-------------------------------------------------- */
+@media \0screen\,screen\9 { /* IE6-8 */
+    /* Remove IE7 black border on converting any black color to transparent.
+       Be sure that input[type=submit] has not specified #000000 for any property.
+       Unfortunately it is casing remove properties filter:progid:DXImageTransform.Microsoft.gradient(), box-shadow.
+    input[type=submit], input[type=submit]:hover {
+        *filter: chroma(color=#000000);
+    } */
+    html {
+        *overflow: auto;
+    }
+    ul, ol {
+        *list-style-position: outside;
+    }
+    hr {
+        *display: block;
+        *height: auto;
+    }
+    form {
+        *margin: auto;
+    }
+    input, select, textarea {
+        width: 20em;
+        padding: .65em .7em;
+        vertical-align: middle;
+    }
+    .tab:before {
+        background-color: #f7f7f7;
+    }
+    .header {
+        overflow: hidden;
+    }
+    .nav {
+        display: table;
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+    .nav a {
+        display: table-cell;
+    }
+}
+@media (min-width:0\0) { /* IE9-10 http://www.impressivewebs.com/ie10-css-hacks/ */
+
+    .tab:before {
+        background-color: #f7f7f7;
+    }
+    .header {
+        overflow: hidden;
+    }
+    .nav {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+    }
+    .nav a {
+        display: table-cell;
+    }
+    .show .nav a {
+        display: block;
+    }
+}
+
+
+
+
+/* Device optimization
+-------------------------------------------------- */
+/* CSS Device Adaptation http://dev.w3.org/csswg/css-device-adapt/ */
+@viewport {
+    width: device-width;
+    max-zoom: 1;
+}
+@media (max-width: 1280px) {
+    .header, .main, .footer {
+        width: 100%;
+        -webkit-transition: width .21s; /* Safari and Android legacy */
+                transition: width .21s;
+    }
+}
+@media (max-width: 900px) {
+    .centrado{display: block}
+    .centrado2{display: block}
+    .colLeft{width: 100%;display: block;}
+    .colRight{width: 100%;display:block}
+    #etiqueta{display:none;}
+    .box{width: 100%}
+.animacion,.animacion2,.animacion3{position:absolute;top:0;left:0;margin-left:0px;border:solid 0px #FF0000}
+
+.anim-slider{height: 400px;}
+
+    img{   width: auto;
+    max-width: 100%;
+    height: auto;}
+    html {
+        background-color: #fff;
+        -webkit-text-size-adjust: 100%;
+
+    }
+    body {
+        margin: auto;
+    }
+    label, input:not([type]), [type^=date], [type=email], [type=month],
+    [type=number], [type=password], [type=tel], [type=text], [type=time],
+    [type=url], [type=week], [type=submit], select, textarea,
+    input.button {
+        width: 100%;
+    }
+    .tab:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-image: -webkit-linear-gradient(#f7f7f7, rgba(241,241,241,.9));
+        background-image:         linear-gradient(#f7f7f7, rgba(241,241,241,.9));
+        border-bottom: 1px solid rgba(255,255,255,.1);
+        box-shadow: 0 0 4px #888;
+    }
+    .tab, .main {
+        background-color: transparent;
+        -webkit-transition: 0; /* Safari and Android legacy */
+                transition: 0;
+    }
+    .tab {
+        margin: auto;
+    }
+    .item {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        font-weight: bold;
+        font-size: 2em;
+        text-shadow: 1px 1px 0 #fff;
+        width: 50%;
+        float: left;
+    }
+    .item-header {
+        text-align: left;
+         }
+   
+ 
+  
+    
+  
+
+   
+  
+    
+    .main {
+        
+        max-width: 100%;
+        /*padding-bottom: 600px;*/
+        margin: auto;
+        border: solid 1px #29d;
+        border-width: 0;
+        box-shadow: none;
+        -webkit-transition: -webkit-transform .21s; /* Safari and Android legacy */
+                transition:         transform .21s;
+    }
+    .status.show-header .header,
+    .status.show-footer .footer {
+        visibility: visible;
+        box-shadow: 0 0 1.2em rgba(0,0,0,.2);
+        -webkit-transform: translateX(0); /* Webkit legacy */
+                transform: translateX(0);
+    }
+    .status.show-header .item-header,
+    .status.show-footer .item-footer {
+        background-color: #ebebeb;
+    }
+    .status.show .main {
+        pointer-events: none;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+    }
+    .status.show-header .main {
+        -webkit-transform: translateX(92%); /* Webkit legacy */
+                transform: translateX(92%);
+    }
+    .status.show-footer .main {
+        -webkit-transform: translateX(-92%); /* Webkit legacy */
+                transform: translateX(-92%);
+    }
+}
+@media (max-width: 320px) {
+    html {
+        font-size: 58%;
+        -webkit-transition: font-size .2s; /* Safari and Android legacy */
+                transition: font-size .2s;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.6em;
+    }
+    h3 {
+        font-size: 1.3em;
+    }
+} 
+
+
+@media print {
+    *, h2, h3 {
+        color: #000;
+        text-shadow: none;
+        background: transparent;
+    }
+    a, a:visited {
+        color: #444;
+        text-decoration: underline;
+    }
+    /*[href]:after, abbr[title]:after {
+        color: #999;
+    }
+    [href]:after {
+        content: ' (' attr(href) ')';
+    }
+    abbr[title]:after {
+        content: ' (' attr(title) ')';
+    }
+    img {
+        page-break-inside: avoid;
+    }*/
+    @page {
+        margin: .5cm;
+    }
+   
+    h2, h3 {
+        page-break-after: avoid;
+    }
+    .tab, .footer {
+        display: none;
+    }
+    html, .main {
+        background: inherit;
+    }
+    .main {
+        border-width: 0;
+        box-shadow: none;
+    }
+    .button {
+        text-decoration: none;
+        border-color: #444;
+        box-shadow: none;
+    }
+    @media (max-width: 532px) {
+        .main {
+            padding-top: 1em;
+        }
+    }
+}
