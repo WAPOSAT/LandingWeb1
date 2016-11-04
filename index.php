@@ -71,7 +71,6 @@ $metadata
 <link rel=stylesheet href={$assets}jquery.animateSlider.css>
 <link rel=stylesheet href={$assets}font-awesome.css></link>
 
-
 <!--[if lt IE 9]><script src=//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.min.js></script><![endif]-->
 ";
 ?>
@@ -82,7 +81,7 @@ $metadata
 
 <header class=header>
 <div class=logo><a class=js-as href='/'><img src=img/water-protection-monitoreo-del-agua-logo-waposat.png></a></div>
-<div class=login>Log In</div>
+<a href='http://monitoreo.waposat.com'><div class=login>Log In</div></a>
 </header>
 
 <main class="main js-content">

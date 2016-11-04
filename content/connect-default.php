@@ -1,4 +1,7 @@
 <?php
+// nombre original del archivo para ser utilizado es
+// connect.php
+
 session_start();
 //$_SESSION['user']="";
 // MySQL settings
