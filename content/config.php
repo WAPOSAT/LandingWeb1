@@ -14,8 +14,12 @@ if (in_array($_SERVER['REMOTE_ADDR'], array('127.0.0.1'))) {
 
     // Assets for development
     $rand = rand();
-    $css  = 'style.' . $rand . '.css';
-    $js   = 'jquery.address.' . $rand . '.js';
+    //$css  = 'style.' . $rand . '.css';
+    //$js   = 'jquery.address.' . $rand . '.js';
+    // cambio para que trabaje normal en develop
+    $css = 'style.min.css';
+    $js  = 'jquery.address.min.js';
+
 } else {
     error_reporting(0);
 
