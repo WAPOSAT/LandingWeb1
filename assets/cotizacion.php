@@ -9,7 +9,7 @@ if(isset($_GET['emailcotizacion'])) {
  
     // Edita las dos líneas siguientes con tu dirección de correo y asunto personalizados
  
-    $email_from = "juan.basflo@gmail.com";
+    $email_from = "no_reply@waposat.com";
     $email_admin = "juan.basflo@gmail.com";
  
     $email_subject = "COTIZACION WAPOSAT NO-REPLY";   
@@ -65,7 +65,7 @@ if(isset($_GET['emailcotizacion'])) {
         @mail($email_admin, $email_subject, $email_message, $headers);  
 
         //Enviando el mensaje al cliente
-        @mail($email_to, $email_subject, $client_Body, $headers);  
+        //@mail($email_to, $email_subject, $client_Body, $headers);  
     } 
     else{
       echo "Fallo de envio";
