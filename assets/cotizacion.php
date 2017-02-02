@@ -10,7 +10,7 @@ if(isset($_GET['emailcotizacion'])) {
     // Edita las dos líneas siguientes con tu dirección de correo y asunto personalizados
  
     $email_from = "no_reply@waposat.com";
-    $email_admin = "jhosept@waposat.com";
+    $email_admin = "jhosept@gmail.com";
  
     $email_subject = "COTIZACION WAPOSAT NO-REPLY";   
      // Se valida que los campos del formulairo estén llenos
