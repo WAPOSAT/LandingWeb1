@@ -10,7 +10,7 @@ if(isset($_GET['email'])) {
     // Edita las dos líneas siguientes con tu dirección de correo y asunto personalizados
  
     $email_from = "no_reply@waposat.com";
-    $email_admin = "juan.basflo@gmail.com";
+    $email_admin = "jhosept@waposat.com";
  
     $email_subject = "CONSULTA WAPOSAT [CONTACTANOS]";   
      // Se valida que los campos del formulairo estén llenos
